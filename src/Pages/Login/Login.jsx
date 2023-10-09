@@ -8,11 +8,12 @@ import auth from "../../firebase/firebase.config";
 
 
 const Login = () => {
-    const { login } = useContext(AuthContext);
+    const { user,login } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
-    console.log(location);
+    // console.log(location);
 
+    console.log(user);
 
     const provider = new GoogleAuthProvider();
 
@@ -50,8 +51,8 @@ const Login = () => {
 
             })
             .catch(error => {
-                console.error(error);
-                swal("an error occurs", "You clicked the button!", "error");
+                console.error(error.message);
+                swal("Invalid email or password", "You clicked the button!", "error");
             })
 
     }

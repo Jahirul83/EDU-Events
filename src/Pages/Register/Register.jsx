@@ -1,26 +1,48 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
-
-
+import swal from "sweetalert";
 
 const Register = () => {
     const { createUser } = useContext(AuthContext);
+    const [regError, setRegError] = useState('');
+    const navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
         const form = new FormData(e.currentTarget);
         const email = form.get('email');
         const password = form.get('password');
-        // console.log(email, password);
+        console.log(email, password);
+
+        const passwordRegex = /[A-Z]/;
+
+        if(password.length<6)
+        {
+            setRegError('Password should be at least 6 characters');
+            swal("Password should be at least 6 characters", "You clicked the button!", "error");
+            return;
+        }
+        else if(!passwordRegex.test(password)){
+            setRegError("don't have a special character");
+            swal("don't have a special character", "You clicked the button!", "error");
+            return;
+        }
+
+        setRegError('');
 
         //  create user with email and password
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
+                swal("Registration successful", "You clicked the button!", "success");
+                navigate(location?.state ? location.state : '/')
+
             })
             .catch(error => {
                 console.error(error);
+                setRegError(error.message);
+                swal(`${error.message}`, "You clicked the button!", "error");
             })
 
 
@@ -67,6 +89,11 @@ const Register = () => {
                                 <button className="btn btn-primary">Register</button>
                             </div>
                             <p>Already have an account please <Link className="text-blue-500 font-bold" to='/login'>Login</Link></p>
+                            {
+                                regError && <p className="text-red-600">
+                                    {regError}
+                                </p>
+                            }
                         </form>
                     </div>
                 </div>
