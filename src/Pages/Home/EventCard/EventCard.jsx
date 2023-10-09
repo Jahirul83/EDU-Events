@@ -12,7 +12,7 @@ const EventCard = ({ event }) => {
                     <h2 className="card-title">{event_name}</h2>
                     <p>{description}</p>
                     <div className="card-actions">
-                        <Link to={`/services/${event_id}`}><button className="btn btn-primary w-full">Details</button></Link>
+                        <Link to={`/services/${event_id}`}><button className="btn bg-orange-500 text-white w-full">Details</button></Link>
                     </div>
                 </div>
             </div>
