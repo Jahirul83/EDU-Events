@@ -27,16 +27,18 @@ const EventDetails = () => {
                 <div className="relative min-h-screen my-14">
                     <img className="w-screen h-screen" src={image_url} alt="" />
                     <div className="absolute bottom-2 -mt-10 bg-opacity-50 bg-slate-900 p-6 w-full">
-                        <button className="btn btn-primary">Date: {date}</button>
+                        <button className="btn bg-orange-500 text-white">Date: {date}</button>
                     </div>
                 </div>
                 <div className="my-12">
                     <h2 className="text-3xl">{event_name}</h2>
                     <p className="my-3">{description}</p>
+                    <p className="my-3">date: {date}</p>
+                    <p className="my-3">location: {location}</p>
+                    <p className="my-3">organizer: {organizer}</p>
                 </div>
             </div>
 
-            {/* <p>{id}</p> */}
         </div>
     );
 };
