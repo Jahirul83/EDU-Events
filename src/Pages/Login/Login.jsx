@@ -1,10 +1,14 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
+import swal from "sweetalert";
 
 
 const Login = () => {
     const { login } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location =useLocation();
+    console.log(location);
 
 
     const handleLogin = e => {
@@ -18,10 +22,15 @@ const Login = () => {
         login(email, password)
             .then(result => {
                 console.log(result.user);
-                alert('logged in successful')
+                swal("LogIn successful", "You clicked the button!", "success");
+                // navigate after login
+
+                navigate(location?.state ? location.state : '/')
+
             })
             .catch(error => {
                 console.error(error);
+                swal("an error occurs", "You clicked the button!", "error");
             })
 
     }
