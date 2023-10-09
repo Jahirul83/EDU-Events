@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 
 const EventCard = ({ event }) => {
@@ -20,3 +21,6 @@ const EventCard = ({ event }) => {
 };
 
 export default EventCard;
+EventCard.propTypes = {
+    event: PropTypes.object
+}
