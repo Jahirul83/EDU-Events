@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
-import auth from "../../firebase/firebase.config";
+
 
 
 const Register = () => {
-    const {user, createUser } = useContext(AuthContext);
+    const { createUser } = useContext(AuthContext);
 
     const handleRegister = e => {
         e.preventDefault();

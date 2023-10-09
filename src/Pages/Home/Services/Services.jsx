@@ -1,5 +1,6 @@
 import { useState } from "react";
 import EventCard from "../eventCard/eventCard";
+// import { useLoaderData } from "react-router-dom";
 
 
 const Services = () => {
@@ -8,6 +9,8 @@ const Services = () => {
     fetch('event.json')
       .then(response => response.json())
       .then(json => setAlleEvent(json))
+
+    // const allEvent = useLoaderData();
 
 
 

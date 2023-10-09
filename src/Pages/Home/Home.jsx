@@ -8,7 +8,6 @@ const Home = () => {
     // console.log(events);
     return (
         <div>
-            <h2 className="text-2xl">This is home</h2>
             {/* banner */}
             <Banner></Banner>
             <div className="border">
