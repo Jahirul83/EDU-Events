@@ -1,0 +1,122 @@
+[
+    {
+        "event_id": "1",
+        "event_name": "Introduction to Data Science Workshop",
+        "date": "2023-11-15",
+        "location": "123 Main Street, Cityville",
+        "description": "Learn the fundamentals of data science in this hands-on workshop.",
+        "organizer": "Data Science Institute",
+        "registration_link": "https://example.com/data-science-workshop",
+        "image_url": "https://i.ibb.co/54bvcxj/image-1.jpg"
+    },
+    {
+        "event_id": "2",
+        "event_name": "Digital Marketing Masterclass",
+        "date": "2023-12-10",
+        "location": "456 Elm Avenue, Townsville",
+        "description": "Discover the latest trends and strategies in digital marketing.",
+        "organizer": "Marketing Pro Academy",
+        "registration_link": "https://example.com/digital-marketing-masterclass",
+        "image_url": "https://i.ibb.co/zmfVhks/image-2.jpg"
+    },
+    {
+        "event_id": "3",
+        "event_name": "Machine Learning Bootcamp",
+        "date": "2024-01-20",
+        "location": "789 Oak Road, Villageton",
+        "description": "Deep dive into machine learning algorithms and applications.",
+        "organizer": "AI Academy",
+        "registration_link": "https://example.com/machine-learning-bootcamp",
+        "image_url": "https://i.ibb.co/ZSFcX6k/image-3.jpg"
+    },
+    {
+        "event_id": "4",
+        "event_name": "Web Development Crash Course",
+        "date": "2023-10-25",
+        "location": "567 Pine Street, Techville",
+        "description": "Get started with web development in this intensive one-day course.",
+        "organizer": "Tech Learning Hub",
+        "registration_link": "https://example.com/web-development-crash-course",
+        "image_url": "https://i.ibb.co/X5YZpPw/image-4.jpg"
+    },
+    {
+        "event_id": "5",
+        "event_name": "Financial Planning Seminar",
+        "date": "2023-11-30",
+        "location": "101 Oak Lane, Financetown",
+        "description": "Learn the principles of effective financial planning for a secure future.",
+        "organizer": "Finance Academy",
+        "registration_link": "https://example.com/financial-planning-seminar",
+        "image_url": "https://i.ibb.co/bLqYcGd/image-5.jpg"
+    },
+    {
+        "event_id": "6",
+        "event_name": "Leadership and Management Training",
+        "date": "2023-12-15",
+        "location": "789 Leadership Avenue, Managetown",
+        "description": "Enhance your leadership and management skills in this workshop.",
+        "organizer": "Leadership Institute",
+        "registration_link": "https://example.com/leadership-management-training",
+        "image_url": "https://i.ibb.co/8xL9H9D/image-6.jpg"
+    },
+    {
+        "event_id": "7",
+        "event_name": "Artificial Intelligence Summit",
+        "date": "2024-02-05",
+        "location": "555 Innovation Parkway, Techtopia",
+        "description": "Explore the latest advancements in artificial intelligence.",
+        "organizer": "AI Innovation Forum",
+        "registration_link": "https://example.com/ai-summit",
+        "image_url": "https://i.ibb.co/C8hbr9x/image-7.jpg"
+    },
+    {
+        "event_id": "8",
+        "event_name": "Software Development Workshop",
+        "date": "2023-09-20",
+        "location": "234 Code Street, Devtown",
+        "description": "Learn modern software development practices and tools.",
+        "organizer": "DevOps Academy",
+        "registration_link": "https://example.com/software-development-workshop",
+        "image_url": "https://i.ibb.co/54bvcxj/image-1.jpg"
+    },
+    {
+        "event_id": "9",
+        "event_name": "Data Analytics Conference",
+        "date": "2023-10-15",
+        "location": "789 Analytics Road, Analyticstown",
+        "description": "Discover insights from data analytics experts.",
+        "organizer": "Analytics Institute",
+        "registration_link": "https://example.com/data-analytics-conference",
+        "image_url": "https://i.ibb.co/zmfVhks/image-2.jpg"
+    },
+    {
+        "event_id": "10",
+        "event_name": "Entrepreneurship Workshop",
+        "date": "2024-03-12",
+        "location": "789 Startup Street, Entrepreneurville",
+        "description": "Learn how to start and grow your own business.",
+        "organizer": "Startup Academy",
+        "registration_link": "https://example.com/entrepreneurship-workshop",
+        "image_url": "https://i.ibb.co/ZSFcX6k/image-3.jpg"
+    },
+    {
+        "event_id": "11",
+        "event_name": "Cybersecurity Conference",
+        "date": "2024-04-18",
+        "location": "222 Security Boulevard, Secure City",
+        "description": "Discuss the latest trends and challenges in cybersecurity.",
+        "organizer": "Cybersecurity Association",
+        "registration_link": "https://example.com/cybersecurity-conference",
+        "image_url": "https://i.ibb.co/X5YZpPw/image-4.jpg"
+    },
+    {
+        "event_id": "12",
+        "event_name": "Language Learning Intensive",
+        "date": "2024-05-22",
+        "location": "333 Polyglot Avenue, Langland",
+        "description": "Immerse yourself in language learning with native speakers.",
+        "organizer": "Language Institute",
+        "registration_link": "https://example.com/language-learning-intensive",
+        "image_url": "https://i.ibb.co/bLqYcGd/image-5.jpg"
+    }
+]
