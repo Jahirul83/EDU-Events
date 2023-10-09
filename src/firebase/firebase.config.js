@@ -6,15 +6,15 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBrPcSiJ0fTDV_Xe_xpG2uz5NsqYKlmi9w",
-  authDomain: "edu-events-bc1b1.firebaseapp.com",
-  projectId: "edu-events-bc1b1",
-  storageBucket: "edu-events-bc1b1.appspot.com",
-  messagingSenderId: "353547579163",
-  appId: "1:353547579163:web:0a10f4950454798d6c2dbe"
+    apiKey: "AIzaSyBrPcSiJ0fTDV_Xe_xpG2uz5NsqYKlmi9w",
+    authDomain: "edu-events-bc1b1.firebaseapp.com",
+    projectId: "edu-events-bc1b1",
+    storageBucket: "edu-events-bc1b1.appspot.com",
+    messagingSenderId: "353547579163",
+    appId: "1:353547579163:web:0a10f4950454798d6c2dbe"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-export default auth
+export default auth;
