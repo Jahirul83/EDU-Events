@@ -19,8 +19,8 @@ const NavBar = () => {
         <li><NavLink to='/services'>services</NavLink></li>
         <li><NavLink to='/career'>career</NavLink></li>
         <li><NavLink to='/about'>about</NavLink></li>
-        <li><NavLink to='/login'>Login</NavLink></li>
-        <li><NavLink to='/register'>Register</NavLink></li>
+        {/* <li><NavLink to='/login'>Login</NavLink></li>
+        <li><NavLink to='/register'>Register</NavLink></li> */}
     </>
     return (
         <div>
